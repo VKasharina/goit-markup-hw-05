@@ -477,7 +477,7 @@
     <div class="modal-backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
-          <svg class="modal-close-icon" width="24" height="24">
+          <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -486,25 +486,81 @@
         </p>
         <form class="review_form">
           <div class="review_form_field_wrapper">
-            <label class="review_form_field__label" for=""> </label>
-            <input class="review_form_field_input" type="text" />
+            <label class="review_form_field_label" for="user-name">Name</label>
+            <div class="review_form_input_wrapper">
+              <input
+                class="review_form_input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                required
+              />
+              <svg class="review_form_input_icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="review_form_field_wrapper">
-            <label class="review_form_field__label" for=""> </label>
-            <input class="review_form_field_input" type="text" />
+            <label class="review_form_field_label" for="user-phone"
+              >Phone</label
+            >
+            <div class="review_form_input_wrapper">
+              <input
+                class="review_form_input"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="review_form_input_icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="review_form_field_wrapper">
-            <label class="review_form_field__label" for=""> </label>
-            <input class="review_form_field_input" type="text" />
+            <label class="review_form_field_label" for="user-email"
+              >Email</label
+            >
+            <div class="review_form_input_wrapper">
+              <input
+                class="review_form_input"
+                type="email"
+                id="user-email"
+                name="user-email"
+              />
+              <svg class="review_form_input_icon" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
           <div class="review_form_field_wrapper">
-            <label class="review_form_field__label" for=""> </label>
-            <textarea class="review_form_comment" name="" id=""> </textarea>
+            <label class="review_form_field_label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="review_form_comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              required
+            >
+            </textarea>
           </div>
           <div class="review_form_checkbox_wrapper">
-            <input class="review_form_checkbox" type="checkbox" />
-            <label class="review_form_checkbox_label" for=""
-              >I accept the terms and conditions of the
+            <input
+              class="review_form_checkbox visually-hidden"
+              id="privasy-policy"
+              name="privasy-policy"
+              type="checkbox"
+              value="true"
+              required
+            />
+            <label class="review_form_checkbox_label" for="privasy-policy">
+              <span class="review_form_custom_checkbox">
+                <svg class="review_form_checkbox_icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-chec"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a class="review_form_policy_link" href="">Privacy Policy</a>
             </label>
           </div>
