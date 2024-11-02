@@ -646,6 +646,10 @@ body {
   margin-bottom: 8px;
 }
 
+.review_form_field_wrapper_comment {
+  margin-bottom: 16px;
+}
+
 .review_form_field_label {
   display: block;
   margin-bottom: 4px;
@@ -723,7 +727,8 @@ body {
   > .review_form_custom_checkbox {
   background-color: #404bbf;
   border-color: #404bbf;
-  fill: #ffffff;
+  fill: #f4f4fd;
+  border: none;
 }
 
 .review_form_checkbox:focus
