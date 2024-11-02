@@ -546,10 +546,64 @@ body {
 .footer-social-list-icon {
   fill: #f4f4fd;
 }
+
+.subscribe_text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.subscribe_form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe_input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.subscribe_button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe_button_icon {
+  margin-left: 16px;
+}
 /* ======= /FOOTER STYLES ====== */
 
 /* ======= /MODAL WINDOW STYLES ====== */
+
 .modal-backdrop {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -559,15 +613,11 @@ body {
   z-index: 999;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /*
- opacity: 0;
-  pointer-events: none;
-  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
- */
 }
 
 .modal-backdrop.is-open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
@@ -586,6 +636,7 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%);
 }
 
 .modal-close-btn {
@@ -794,4 +845,5 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* ======= /MODAL WINDOW STYLES ====== */
